@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: black;
+    font-family: sans-serif;
+    background-color: lightgray;
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    z-index: 2;
+}
+
+.navbar img {
+    float: left;
+    height: 90%;
+    width: auto;
+    background-color: white;
+    margin: 3.5px 0 auto 3.5px;
+}
+
+.navbar p {
+    float: right;
+    height: 90%;
+    width: auto;
+    background-color: white;
+    margin: 3.5px 5px auto 0;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    padding: 5% 5% 5% 5%;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "partie1 partie1 partie2"
+                         "partie3 partie3 partie2"
+                         "partie3 partie3 partie2"
+                         "partie3 partie3 partie4"
+                         "partie3 partie3 partie4"
+                         "partie3 partie3 partie4"
+                         "partie3 partie3 partie4"
+                         "partie3 partie3 partie4"
+                         "partie3 partie3 partie4"
+                         "partie3 partie3 partie5"
+                         "partie3 partie3 partie5"
+                         "partie3 partie3 partie5";
+}
+
+.partie1 {
+    grid-area: partie1;
+    display: grid;
+    margin: 5% 5% 0 5%;
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.partie2 {
+    grid-area: partie2;
+    display: grid;
+    margin: 5% 5% 0 5%;
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.partie2 p {
+    margin: 20px 0 0 20px;
+    padding: 0;
+    position: relative;
+    display: flex;
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.partie2 a {
+    margin: -30px 0 0 20px;
+    padding: 0;
+    position: relative;
+    display: flex;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+}
+
+.partie3 {
+    grid-area: partie3;
+    display: grid;
+    position: relative;
+    margin: 5% 5% 0 5%;
+    background-color: white;
+    z-index: 1;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+
+.bg {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 250px;
+    position: relative;
+    display: block;
+    z-index: 1;
+}
+
+.pp {
+    width: 100px;
+    border-radius: 50%;
+    top: -85%;
+    left: 40px;
+    position: relative;
+    border: 2px solid white;
+    z-index: 2;
+}
+
+.text {
+    margin: -150px 0 0 20px;
+    padding: 0;
+    position: relative;
+    display: flex;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+}
+
+.partie4 {
+    grid-area: partie4;
+    display: grid;
+    position: relative;
+    margin: 5% 5% 0 5%;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.partie5 {
+    grid-area: partie5;
+    display: grid;
+    position: relative;
+    margin: 5% 5% 0 5%;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 1;
+}
